@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(13, 148, 136, 0.2);
+  color: #0d9488;
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid rgba(13, 148, 136, 0.3);
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Smooth transitions */
+a, button, .btn, .info-card, .service-card, .value-item, .contact-item, .contact-method-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
